@@ -76,7 +76,7 @@ export default defineConfig({
 
     ViteRadar({
       analytics: {
-        id: "UA-90535731-3"
+        id: "G-H93KXN50GC"
       }
     })
   ],
