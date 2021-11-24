@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:wght@300;400;500&display=swap");
+
+/* Variables */
+
+html:not(.dark) {
+  --background: #fdf6e3;
+  --highlights: #eee8d5;
+  --primary: #657b83;
+  --secondary: #93a1a1;
+  --emphasis: #586e75;
+
+  & .shiki-dark {
+    @apply hidden;
+  }
+}
+
+html.dark {
+  --background: #002b36;
+  --highlights: #073642;
+  --primary: #839496;
+  --secondary: #586e75;
+  --emphasis: #93a1a1;
+
+  & .shiki-light {
+    @apply hidden;
+  }
+}
+
+/* General */
+
+::selection {
+  @apply bg-$highlights;
+}
+
+h1,
+h2,
+h3 {
+  @apply leading-normal;
+}
+
+h2 {
+  @apply mt-8;
+}
+
+a,
+a code {
+  @apply text-blue no-underline hover:opacity-75;
+}
+
+.router-link-exact-active {
+  @apply cursor-default text-$emphasis hover:opacity-100;
+}
+
+kbd,
+code,
+pre {
+  @apply font-mono text-magenta;
+}
+
+ol,
+ul {
+  @apply list-outside pl-6;
+
+  & li::marker {
+    @apply text-xl;
+  }
+}
+
+summary {
+  @apply cursor-pointer text-yellow ml-4;
+
+  & code {
+    @apply text-yellow;
+  }
+}
+
+hr {
+  @apply border-dashed border-$highlights rounded-lg border-4;
+}
