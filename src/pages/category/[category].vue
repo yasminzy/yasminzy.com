@@ -2,8 +2,7 @@
   <div>
     <TheHead
       :title="titleCase(category).replaceAll('-', ' ')"
-      :description="`Posts in category: ${category}`"
-    />
+      :description="`Posts in category: ${category}`" />
 
     <hr class="mb-8" />
 

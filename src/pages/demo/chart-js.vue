@@ -2,8 +2,7 @@
   <div>
     <TheHead
       title="Chart.js Demo"
-      description="Chart.js in a Vue project demo."
-    />
+      description="Chart.js in a Vue project demo." />
 
     <DemoHeader title="Chart.js" blog="chart-js" />
 

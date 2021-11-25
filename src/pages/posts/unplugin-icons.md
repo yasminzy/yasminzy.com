@@ -51,4 +51,5 @@ In your `<template>`, add the icon with `{prefix}-{collection}-{icon}`. You can 
 ```html
 <carbon-face-cool class="text-yellow text-3xl" />
 ```
+
 <carbon-face-cool class="text-yellow text-3xl" />

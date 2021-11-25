@@ -2,8 +2,7 @@
   <LineChart
     :chart-data="data"
     :options="options"
-    css-classes="chart-container"
-  />
+    css-classes="chart-container" />
 </template>
 
 <script setup>
@@ -32,9 +31,9 @@ const data = computed(() => ({
 
   datasets: [
     {
+      label: "Foo",
       data: dataValues.value,
-      borderColor: "#dc322f",
-      label: "Foo"
+      borderColor: "#dc322f"
     }
   ]
 }))

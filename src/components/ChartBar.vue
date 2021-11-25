@@ -2,8 +2,7 @@
   <BarChart
     :chart-data="data"
     :options="options"
-    css-classes="chart-container"
-  />
+    css-classes="chart-container" />
 </template>
 
 <script setup>
@@ -29,14 +28,14 @@ const data = computed(() => ({
 
   datasets: [
     {
-      backgroundColor: pattern.draw("dash", "#268bd2"),
+      label: "Foo",
       data: dataValues.value[0],
-      label: "Foo"
+      backgroundColor: pattern.draw("dash", "#268bd2")
     },
     {
-      backgroundColor: pattern.draw("dot", "#2aa198"),
+      label: "Bar",
       data: dataValues.value[1],
-      label: "Bar"
+      backgroundColor: pattern.draw("dot", "#2aa198")
     }
   ]
 }))

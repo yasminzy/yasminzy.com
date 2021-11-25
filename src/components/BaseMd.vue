@@ -1,20 +1,17 @@
 <template>
   <TheHead
     :title="frontmatter.title || post.title"
-    :description="frontmatter.description || post.description"
-  />
+    :description="frontmatter.description || post.description" />
 
   <!-- Template for article -->
   <article
     v-if="$route.path.includes('/posts/')"
-    class="mx-auto max-w-[80ch] w-11/12"
-  >
+    class="mx-auto max-w-[80ch] w-11/12">
     <PostHeader
       :id="post.id"
       :category="post.category"
       :title="post.title"
-      :date="post.date"
-    />
+      :date="post.date" />
 
     <slot />
 

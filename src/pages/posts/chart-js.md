@@ -196,14 +196,14 @@ const data = computed(() => ({
 
   datasets: [
     {
-      backgroundColor: "#268bd2",
+      label: "Foo",
       data: dataValues.value[0],
-      label: "Foo"
+      backgroundColor: "#268bd2"
     },
     {
-      backgroundColor: "#2aa198",
+      label: "Bar",
       data: dataValues.value[1],
-      label: "Bar"
+      backgroundColor: "#2aa198"
     }
   ]
 }))
@@ -264,9 +264,9 @@ const data = computed(() => ({
 
   datasets: [
     {
+      label: "Foo",
       data: dataValues.value,
-      borderColor: "#dc322f",
-      label: "Foo"
+      borderColor: "#dc322f"
     }
   ]
 }))

@@ -4,12 +4,18 @@
       <li
         v-for="(item, index) in tags"
         :key="index"
-        class="list-none my-2 mr-2 last:mr-0"
-      >
+        class="list-none my-2 mr-2 last:mr-0">
         <router-link
           :to="`/tag/${toSlug(item)}`"
-          class="bg-$highlights rounded-lg text-$secondary p-2 hover:rounded-lg-full"
-        >{{ item }}</router-link>
+          class="
+            bg-$highlights
+            rounded-lg
+            text-$secondary
+            p-2
+            hover:rounded-lg-full
+          ">
+          {{ item }}
+        </router-link>
       </li>
     </ul>
 
