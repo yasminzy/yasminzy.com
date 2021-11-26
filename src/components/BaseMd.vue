@@ -11,7 +11,9 @@
       :id="post.id"
       :category="post.category"
       :title="post.title"
-      :date="post.date" />
+      :date="post.date"
+      :youtube="post.youtube"
+      :github="post.github" />
 
     <slot />
 
@@ -74,5 +76,9 @@ onMounted(() => {
 
 .shiki-container {
   @apply border-solid border-$highlights rounded-lg border-4 shadow mb-4 leading-normal py-2 px-4;
+}
+
+.chart-container {
+  @apply bg-$highlights rounded-lg;
 }
 </style>

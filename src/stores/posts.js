@@ -12,7 +12,9 @@ export const posts = [
       "patternomaly",
       "vue",
       "vite"
-    ]
+    ],
+    youtube: "https://youtu.be/zSaaZ-TP2tc",
+    github: "https://github.com/yasminzy/vue-3-chart"
   },
   {
     id: "eslint-prettier",
