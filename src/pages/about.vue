@@ -2,7 +2,8 @@
   <div>
     <TheHead
       title="About Yasmin ZY"
-      description="Info about Yasmin Zulfati Yusrina" />
+      description="Info about Yasmin Zulfati Yusrina"
+    />
 
     <hr class="mb-8" />
 
@@ -10,26 +11,12 @@
 
     <div class="grid gap-8 md:grid-cols-[1fr,2fr]">
       <div
-        class="
-          border-solid border-$highlights
-          rounded-lg
-          h-full
-          border-4
-          w-full
-          wrapper
-          overflow-hidden
-        ">
+        class="border-solid border-$highlights rounded-lg h-full border-4 w-full wrapper overflow-hidden"
+      >
         <img
           src="../assets/img/yasmin.jpeg"
-          class="
-            rounded-lg
-            h-full
-            object-cover object-center
-            w-full
-            transition
-            ease-in-out
-            duration-200
-          " />
+          class="rounded-lg h-full object-cover object-center w-full transition ease-in-out duration-200"
+        />
       </div>
 
       <div class="max-w-[80ch]">
@@ -38,7 +25,9 @@
           Samarinda, Indonesia. I started learning to code after I graduated
           from Institut Teknologi Kalimantan in 2016. In 2018, I started making
           Vue tutorials on
-          <a href="https://www.youtube.com/c/YasminZulfatiYusrina">YouTube</a>
+          <a
+            href="https://www.youtube.com/c/YasminZulfatiYusrina"
+          >YouTube</a>
           and my website.
         </p>
 

@@ -2,7 +2,8 @@
   <DoughnutChart
     :chart-data="data"
     :options="options"
-    css-classes="chart-container" />
+    css-classes="chart-container"
+  />
 </template>
 
 <script setup>

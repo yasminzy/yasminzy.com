@@ -2,7 +2,8 @@
   <div>
     <TheHead
       :title="titleCase(tag).replaceAll('-', ' ')"
-      :description="`Posts with tag: ${tag}`" />
+      :description="`Posts with tag: ${tag}`"
+    />
 
     <hr class="mb-8" />
 

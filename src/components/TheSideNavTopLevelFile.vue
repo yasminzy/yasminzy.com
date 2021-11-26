@@ -2,7 +2,8 @@
   <li
     v-for="(item, index) in sideNavFiles"
     :key="index"
-    class="list-none mt-2 first:mt-4">
+    class="list-none mt-2 first:mt-4"
+  >
     <router-link :to="item.to">
       <vscode-icons-file-type-markdown v-if="item.extension === 'md'" />
 

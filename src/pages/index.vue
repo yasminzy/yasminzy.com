@@ -2,7 +2,8 @@
   <div>
     <TheHead
       title="Yasmin ZY"
-      description="Personal website of Yasmin Zulfati Yusrina. I create tutorials about Vue.js." />
+      description="Personal website of Yasmin Zulfati Yusrina. I create tutorials about Vue.js."
+    />
 
     <hr class="mb-8" />
 
