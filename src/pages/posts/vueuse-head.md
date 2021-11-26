@@ -4,17 +4,17 @@
 
 ## Installation
 
-Create a Vue project and install the package.
-
-```zsh
-pnpm create vite vue-3-demo -- --template vue
-cd vue-3-demo
-pnpm i @vueuse/head
-pnpm i -D unplugin-vue-components
-```
+Create a Vue project and install the packages.
 
 - [@vueuse/head](https://www.npmjs.com/package/@vueuse/head)
 - [unplugin-vue-components](https://www.npmjs.com/package/unplugin-vue-components) <carbon-arrow-right /> optional - I include it for the convenience of components auto import
+
+```zsh
+pnpm create vite vue-3-head -- --template vue
+cd vue-3-head
+pnpm i @vueuse/head
+pnpm i -D unplugin-vue-components
+```
 
 ## Configuration
 

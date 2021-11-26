@@ -9,9 +9,9 @@ import Pages from "vite-plugin-pages"
 import Path from "path"
 import Shiki from "markdown-it-shiki"
 import Slugify from "slugify"
+import ViteRadar from "vite-plugin-radar"
 import Vue from "@vitejs/plugin-vue"
 import WindiCSS from "vite-plugin-windicss"
-import ViteRadar from "vite-plugin-radar"
 
 const markdownWrapperClasses = "md"
 

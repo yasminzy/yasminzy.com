@@ -6,14 +6,14 @@
 
 Create a Vue project and install the packages.
 
-```zsh
-pnpm create vite vue-3-demo -- --template vue
-cd vue-3-demo
-pnpm i -D vite-plugin-windicss windicss
-```
-
 - [vite-plugin-windicss](https://www.npmjs.com/package/vite-plugin-windicss)
 - [windicss](https://www.npmjs.com/package/windicss)
+
+```zsh
+pnpm create vite vue-3-windi -- --template vue
+cd vue-3-windi
+pnpm i -D vite-plugin-windicss windicss
+```
 
 ## Configuration
 

@@ -7,16 +7,16 @@
 
 Create a Vue project and install the packages.
 
-```zsh
-pnpm create vite vue-3-demo -- --template vue
-cd vue-3-demo
-pnpm i -D eslint eslint-config-prettier eslint-plugin-vue prettier
-```
-
 - [eslint](https://www.npmjs.com/package/eslint)
 - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
 - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)
 - [prettier](https://www.npmjs.com/package/prettier)
+
+```zsh
+pnpm create vite vue-3-eslint-prettier -- --template vue
+cd vue-3-eslint-prettier
+pnpm i -D eslint eslint-config-prettier eslint-plugin-vue prettier
+```
 
 ## Configuration
 

@@ -6,14 +6,14 @@
 
 Create a Vue project and install the packages.
 
-```zsh
-pnpm create vite vue-3-demo -- --template vue
-cd vue-3-demo
-pnpm i -D unplugin-icons unplugin-vue-components
-```
-
 - [unplugin-icons](https://www.npmjs.com/package/unplugin-icons)
 - [unplugin-vue-components](https://www.npmjs.com/package/unplugin-vue-components) <carbon-arrow-right /> optional - I include it for the convenience of components auto import
+
+```zsh
+pnpm create vite vue-3-icon -- --template vue
+cd vue-3-icon
+pnpm i -D unplugin-icons unplugin-vue-components
+```
 
 ## Configuration
 
