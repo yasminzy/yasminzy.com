@@ -1,18 +1,14 @@
 import { posts } from "./posts.js"
-import { demo } from "./demo.js"
 
 export const useStore = defineStore("main", {
   state: () => {
     return {
-      posts,
-      demo
+      posts
     }
   },
 
   getters: {
-    getId: (state) => {
-      return (type) => state[type].map((value) => value.id).sort()
-    },
+    getId: (state) => state.posts.map((value) => value.id).sort(),
 
     getLatestPosts: (state) => {
       return (number) =>

@@ -6,16 +6,16 @@
 
 Create a Vue project and install the packages.
 
-```zsh
-pnpm create vite vue-3-demo -- --template vue
-cd vue-3-demo
-pnpm i chart.js vue-chart-3
-pnpm i -D unplugin-auto-import
-```
-
 - [chart.js](https://www.npmjs.com/package/chart.js)
 - [vue-chart-3](https://www.npmjs.com/package/vue-chart-3)
 - [unplugin-auto-import](https://www.npmjs.com/package/unplugin-auto-import) <carbon-arrow-right /> optional - I include it for the convenience of APIs auto import
+
+```zsh
+pnpm create vite vue-3-chart -- --template vue
+cd vue-3-chart
+pnpm i chart.js vue-chart-3
+pnpm i -D unplugin-auto-import
+```
 
 ## Configuration
 
@@ -334,69 +334,8 @@ backgroundColor: pattern.generate(["#859900", "#d33682", "#cb4b16"]) // use this
 
 ## Demo
 
-Check the <router-link :to="{ name: 'demo-chart-js' }">demo</router-link>.
-
-Or just see the final code for each component:
-
-<details>
-<summary class="ml-0"><code>ChartBar.vue</code></summary>
-
-<<< @/components/ChartBar.vue
-
-</details>
-
-<details>
-<summary class="ml-0"><code>ChartDoughnut.vue</code></summary>
-
-```vue
-<template>
-  <DoughnutChart
-    :chart-data="data"
-    :options="options"
-    css-classes="chart-container" />
-</template>
-
-<script setup>
-import pattern from "patternomaly"
-import { DoughnutChart } from "vue-chart-3"
-import { Chart, DoughnutController, ArcElement } from "chart.js"
-
-Chart.register(DoughnutController, ArcElement)
-
-const dataValues = ref([10, 20, 40])
-
-const data = computed(() => ({
-  labels: ["Foo", "Bar", "Baz"],
-
-  datasets: [
-    {
-      data: dataValues.value,
-      backgroundColor: pattern.generate(["#859900", "#d33682", "#cb4b16"])
-    }
-  ]
-}))
-
-const options = ref({
-  elements: {
-    arc: {
-      borderColor: "#eee8d5"
-    }
-  },
-
-  plugins: {
-    title: {
-      text: "Doughnut"
-    }
-  }
-})
-</script>
-```
-
-</details>
-
-<details>
-<summary class="ml-0"><code>ChartLine.vue</code></summary>
-
-<<< @/components/ChartLine.vue
-
-</details>
+<div class="grid gap-8" lg="grid-cols-2">
+  <ChartBar />
+  <ChartDoughnut />
+  <ChartLine />
+</div>
